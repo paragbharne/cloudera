@@ -8,9 +8,7 @@
     "dnsNamePrefix": {
       "type": "string"
     },
-    "scriptsUri": {
-      "type": "string"
-    },
+    
     "vmSpec": {
       "type": "object"
     },
