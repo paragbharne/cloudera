@@ -30,7 +30,7 @@
     }
   },
   "variables": {
-    "vmUri": "[concat(parameters('scriptsUri'),'/vm-5-datadisks.json')]"
+    
   },
   "resources": [
     {
@@ -39,7 +39,7 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "[variables('vmUri')]",
+          "uri": "https://github.com/paragbharne/cloudera",
           "contentVersion": "1.0.0.1"
         },
         "parameters": {
@@ -52,10 +52,7 @@
           "dnsNamePrefix": {
             "value": "[parameters('dnsNamePrefix')]"
           },
-          "scriptsUri": {
-            "value": "[parameters('scriptsUri')]"
-          },
-          "storageAccount": {
+                    "storageAccount": {
             "value": "[parameters('storageAccount')]"
           },
           "vmCount": {
