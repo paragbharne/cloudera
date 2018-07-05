@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.1",
+  "parameters": {
+    "storageAccountSuffix": {
+      "value": "cmadmin"
+    },
+    "dnsNamePrefix": {
+      "value": "cmadmin"
+    },
+    "virtualNetworkRGName": {
+      "value": "cmadmin"
+    },
+    "adminPassword": {
+      "value": "cmadmin@123"
+    },
+    "cmPassword": {
+      "value": "cmadmin@123"
+    }
+  }
+}
