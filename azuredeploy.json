@@ -419,9 +419,7 @@
           "vnetID": {
             "value": "[variables('VNetId')]"
           },
-          "templateAPIVersion": {
-            "value": "[variables('templateAPIVersion')]"
-          },
+          
           "resourceAPIVersion": {
             "value": "[variables('resourceAPIVersion')]"
           },

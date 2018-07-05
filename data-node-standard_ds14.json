@@ -5,9 +5,7 @@
     "vnetID": {
       "type": "string"
     },
-    "templateAPIVersion": {
-      "type": "string"
-    },
+    
     "resourceAPIVersion": {
       "type": "string"
     },
