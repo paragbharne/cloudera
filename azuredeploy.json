@@ -244,8 +244,8 @@
     "addressPrefix": "[parameters('addressPrefix')]",
     "subnetPrefix": "[parameters('subnetPrefix')]",
     "scriptsUriDescription": "For Command Line Deployment, scriptsUri must point to an Azure-accessible location like: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/cloudera-on-centos",
-    "scriptsUri": "[uri(deployment().properties.templateLink.uri, '.')]",
-    "share-resourcesUri": "[concat(variables('scriptsUri'), '/shared-resources-', parameters('vnetNewOrExisting'), '-vnet.json')]",
+    
+    
     "data-nodeUri": "https://raw.githubusercontent.com/paragbharne/cloudera/master/data-node-ds13.json",
     "sa": "[parameters('masterNodeIPAddress')]",
     "ipOctet01": "[concat(split(variables('sa'), '.')[0], '.', split(variables('sa'), '.')[1], '.')]",
@@ -428,9 +428,7 @@
           "dnsNamePrefix": {
             "value": "[parameters('dnsNamePrefix')]"
           },
-          "scriptsUri": {
-            "value": "[variables('scriptsUri')]"
-          },
+          
           "storageAccount": {
             "value": "[variables('workerStorageAccount')]"
           },
@@ -470,9 +468,7 @@
           "dnsNamePrefix": {
             "value": "[parameters('dnsNamePrefix')]"
           },
-          "scriptsUri": {
-            "value": "[variables('scriptsUri')]"
-          },
+          
           "vmSpec": {
             "value": "[variables('vmSpec')]"
           },
