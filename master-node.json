@@ -138,6 +138,7 @@
     {
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(variables('vmName'), copyIndex())]",
+      "apiVersion": "2016-04-30-preview",
       "plan": "[parameters('vmSpec').imageInfo.plan]",
       "location": "[parameters('location')]",
       "copy": {
