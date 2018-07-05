@@ -467,10 +467,9 @@
           },
           "dnsNamePrefix": {
             "value": "[parameters('dnsNamePrefix')]"
+
           },
-          "scriptsUri": {
-            "value": "[variables('scriptsUri')]"
-          },
+          
           "vmSpec": {
             "value": "[variables('vmSpec')]"
           },
