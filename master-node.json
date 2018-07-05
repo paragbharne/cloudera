@@ -88,6 +88,7 @@
     {
       "type": "Microsoft.Network/publicIPAddresses",
       "name": "[concat(variables('publicIPAddressName'), copyIndex())]",
+      "apiVersion": "2017-06-01",
       "location": "[parameters('location')]",
       "copy": {
         "name": "publicIPLoop",
