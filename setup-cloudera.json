@@ -78,10 +78,10 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "[concat(parameters('scriptsUri'), '/scripts/bootstrap-cloudera.sh')]",
-            "[concat(parameters('scriptsUri'), '/scripts/initialize-cloudera-server.sh')]",
-            "[concat(parameters('scriptsUri'), '/scripts/cmxDeployOnIbiza.py')]",
-            "[concat(parameters('scriptsUri'), '/scripts/install-postgresql.sh')]"
+            "https://raw.githubusercontent.com/paragbharne/cloudera/master/scripts/bootstrap-cloudera.sh",
+            "https://raw.githubusercontent.com/paragbharne/cloudera/master/scripts/initialize-cloudera-server.sh",
+            "https://raw.githubusercontent.com/paragbharne/cloudera/master/scripts/cmxDeployOnIbiza.py",
+            "https://raw.githubusercontent.com/paragbharne/cloudera/master/scripts/install-postgresql.sh"
           ]
         },
         "protectedSettings": {
