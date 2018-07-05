@@ -27,14 +27,14 @@
     {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[parameters('masterNodeASName')]",
-      "apiVersion": "2017-07-01-preview",
+      "apiVersion": "2017-03-30",
       "location": "[parameters('location')]",
       "properties": {}
     },
     {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[parameters('dataNodeASName')]",
-      "apiVersion": "2017-07-01-preview",
+      "apiVersion": "2017-03-30",
       "location": "[parameters('location')]",
       "properties": {}
     },
