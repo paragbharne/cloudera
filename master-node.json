@@ -79,7 +79,7 @@
         "count": "[parameters('vmCount')]"
       },
       "properties": {
-        "accountType": "[parameters('storageAccount').type]"
+        "accountType": "Standard_LRS"
       }
     },
     {
