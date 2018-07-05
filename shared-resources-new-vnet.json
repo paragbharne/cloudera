@@ -27,18 +27,21 @@
     {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[parameters('masterNodeASName')]",
+      "apiVersion": "2017-07-01-preview",
       "location": "[parameters('location')]",
       "properties": {}
     },
     {
       "type": "Microsoft.Compute/availabilitySets",
       "name": "[parameters('dataNodeASName')]",
+      "apiVersion": "2017-07-01-preview",
       "location": "[parameters('location')]",
       "properties": {}
     },
     {
       "type": "Microsoft.Network/networkSecurityGroups",
       "name": "[concat(parameters('networkSpec').virtualNetworkName, '-sg')]",
+      "apiVersion": "2017-06-01",
       "location": "[parameters('location')]",
       "properties": {
         "securityRules": [
