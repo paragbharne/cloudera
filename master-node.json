@@ -75,6 +75,7 @@
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "[concat(uniquestring(concat(copyIndex(), 'mn', resourceGroup().id)), variables('storageAccountName'))]",
+      "apiVersion": "2017-07-01-preview",
       "location": "[parameters('location')]",
       "copy": {
         "name": "storageAccountLoop",

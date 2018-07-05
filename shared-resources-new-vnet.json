@@ -65,6 +65,7 @@
     {
       "type": "Microsoft.Network/virtualNetworks",
       "name": "[parameters('networkSpec').virtualNetworkName]",
+      "apiVersion": "2017-06-01",
       "dependsOn": [
         "[concat('Microsoft.Network/networkSecurityGroups/', parameters('networkSpec').virtualNetworkName, '-sg')]"
       ],
