@@ -12,7 +12,7 @@
       "type": "string"
     },
     "storageAccount": {
-      "type": "object"
+      "type": "string"
     },
     "vmCount": {
       "type": "int"
