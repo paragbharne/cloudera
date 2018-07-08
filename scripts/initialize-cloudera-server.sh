@@ -109,9 +109,12 @@ log "END: master node deployments"
 
 
 # Set up python
-rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm >> "${LOG_FILE}" 2>&1
-yum -y install python-pip >> "${LOG_FILE}" 2>&1
-pip install cm_api >> "${LOG_FILE}" 2>&1
+#rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm >> "${LOG_FILE}" 2>&1
+#yum -y install python-pip >> "${LOG_FILE}" 2>&1
+#pip install cm_api >> "${LOG_FILE}" 2>&1
+sudo rpm -ivh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+sudo yum -y install python-pip
+sudo pip install cm_api
 
 # trap file to indicate done
 log "creating file to indicate finished"
