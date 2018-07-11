@@ -16,8 +16,7 @@ from paramiko import SSHClient
 
 from time import sleep
 
-from cm_api.api_client import ApiResource 
-from cm_api.api_client import ApiException
+
 from cm_api.endpoints.hosts import *
 from cm_api.endpoints.services import ApiServiceSetupInfo, ApiService
 
