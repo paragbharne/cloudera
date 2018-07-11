@@ -110,12 +110,13 @@ log "END: master node deployments"
 
 # Set up python
 rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm >> "${LOG_FILE}" 2>&1
-yum -y install python-pip >> "${LOG_FILE}" 2>&1
-pip install cm_api >> "${LOG_FILE}" 2>&1
-yum install git -y
-git clone git://github.com/cloudera/cm_api.git
-cd cm_api/python
-python setup.py install
+yum -y install python-pip 
+pip install cm_api 
+#pip install cm-api
+#yum install git -y
+#git clone git://github.com/cloudera/cm_api.git
+#cd cm_api/python
+#python setup.py install
 
 
 # trap file to indicate done
